@@ -8,55 +8,62 @@
 </head>
 <body>
     <section class="form-register">
-        <form action="" method="post">
+        <form action="" method="get">
         <h4>Formulario Registro</h4>
         <div class = "Grupo_Nombres">
-        <input class = "controls" type="text" name = "nombres" id = "nombres" placeholder=" Ingrese su Nombre">
-        <input class = "controls" type="text" name = "apellidos" id = "apellidos" placeholder=" Ingrese su Apellido">
+            <input class = "controls" type="text" name = "nombres" id = "nombres" placeholder=" Ingrese su Nombre">
+            <input class = "controls" type="text" name = "apellidos" id = "apellidos" placeholder=" Ingrese su Apellido">
         </div>
         <input class = "controls" type="date" name = "fecha_nacimiento" id="fecha_nacimiento" >
-        <div class = "Grupo_Nombres">
-        <select class = "controls" name="tipo_documento" id="tipo_documento">
-            <option value = "" disabled selected>Tipo de documento</option>
-            <option value ="cc">Cedula de Ciudadania</option>
-            <option value ="ce">Cedula de Extranjeria</option>
-            <option value ="ti">Tarjeta de Identidad</option>
-            <option value ="ptp">Pasaporte</option>
-        </select>
-        <input class ="controls" type="number" name="numero_documento" id="numero_documento" placeholder="Ingrese su Numero de Documento">
+        <div class = "Numero_Documento_">
+            <select class = "controls" name="tipo_documento" id="tipo_documento">
+                <option value = "" disabled selected>Tipo de documento</option>
+                <option value ="cc">Cedula de Ciudadania</option>
+                <option value ="ce">Cedula de Extranjeria</option>
+                <option value ="ti">Tarjeta de Identidad</option>
+                <option value ="ptp">Pasaporte</option>
+            </select>
+                <input class ="controls" type="number" name="numero_documento" id="numero_documento" placeholder="Ingrese su Numero de Documento">
         </div>
-        <select class="controls" name="prefijo_pais" id="prefijo_pais">
-        <option value="" disabled selected>Seleccione su Extension Numerica</option>
-        <option value ="+57"> Colombia (+57)</option>
-        <option value ="+1">Estados Unidos (+1)</option>
-        <option value ="+52"> México (+52)</option>      
-        </select>
-        <select class="controls" name="Pais" id="Pais">
-            <option value="" disabled selected>Seleccione su Pais</option>
-            <option value ="colombia">Colombia</option>
-            <option value ="usa">Estados Unidos</option>
-            <option value ="mexico">México</option>
-        </select>
-        <select class="controls" name="Ciudad" id="Ciudad">
-            <option value="" disabled selected>Seleccione su Ciudad</option>
-            <option value ="Bogota">Bogota</option>
-            <option value ="Ciudad_Mexico">Ciudad Mexico</option>
-            <option value ="California">California</option>
-        </select>
-
-        <input class = "controls" type="tel" name="telefono" id="telefono" placeholder="Ingrese su Numero de Telefono">
-        <input class = "controls" type="email" name = "correo" id = "correo" placeholder=" Ingrese su Correo">
-        <input class = "controls" type="password" name = "clave" id = "clave" placeholder=" Ingrese la Clave para su cuenta">
+        <div class = "Numero_Extension_Celular">
+            <select class="controls" name="prefijo_pais" id="prefijo_pais">
+                <option value="" disabled selected>Seleccione su Extension Numerica</option>
+                <option value ="+57"> Colombia (+57)</option>
+                <option value ="+1">Estados Unidos (+1)</option>
+                <option value ="+52"> México (+52)</option>      
+            </select>
+            <input class = "controls" type="tel" name="telefono" id="telefono" placeholder="Ingrese su Numero de Telefono">
+        </div>
+        <div class = "Pais_Ciudad">
+            <select class="controls" name="Pais" id="Pais">
+                <option value="" disabled selected>Seleccione su Pais</option>
+                <option value ="colombia">Colombia</option>
+                <option value ="usa">Estados Unidos</option>
+                <option value ="mexico">México</option>
+            </select>
+            <select class="controls" name="Ciudad" id="Ciudad">
+                <option value="" disabled selected>Seleccione su Ciudad</option>
+                <option value ="Bogota">Bogota</option>
+                <option value ="Ciudad_Mexico">Ciudad Mexico</option>
+                <option value ="California">California</option>
+            </select>
+        </div>
+        <div class = Email_Clave>
+            <input class = "controls" type="email" name = "correo" id = "correo" placeholder=" Ingrese su Correo">
+            <input class = "controls" type="password" name = "clave" id = "clave" placeholder=" Ingrese la Clave para su cuenta">
+        </div>
         <details class="terminos-desplegable">
             <summary>Estoy de acuerdo con <span>Terminos y Condiciones</span></summary>
             <div class = "contenido-terminos">
-             <label>
-                <input type ="checkbox" name="habeas_data" required>
-                Acepto que mis datos sean recolectados y almacenados para la gestión de envíos y domicilios, conforme a la política de privacidad.
-             </label>  
+                <label>
+                    <input type ="checkbox" name="habeas_data" required>
+                    Acepto que mis datos sean recolectados y almacenados para la gestión de envíos y domicilios, conforme a la política de privacidad.
+                </label>  
             </div>
         </details>
-        <input class = "botons" type = "submit" value ="Registrar">
+        <div class = "boton_registro">
+            <input class = "botons" type = "submit" value ="Registrar">
+        </div>
         </form>
     </section>
     
